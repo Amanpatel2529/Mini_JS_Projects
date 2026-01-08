@@ -1,0 +1,99 @@
+/* General Body Styles */
+body {
+    background-color: #121212; /* Dark background for a 'dark mode' feel */
+    color: #e0e0e0; /* Light gray text for contrast */
+    font-family: Arial, sans-serif;
+    display: flex; /* Use flexbox to center the content */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure the body takes up the full viewport height */
+    margin: 0;
+}
+
+/* Container for the To-Do List */
+.container {
+    background-color: #1e1e1e; /* A slightly lighter dark for the container background */
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* A subtle shadow for depth */
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Heading */
+h1 {
+    margin-top: 0;
+    color: #559cf9; /* A pop of color for the title */
+}
+
+/* Input and Button Container */
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Input Field */
+#todo-input {
+    flex-grow: 1; /* Allows the input to take up available space */
+    padding: 12px;
+    border: 1px solid #333;
+    border-radius: 8px; /* Rounded corners */
+    background-color: #2c2c2c;
+    color: #e0e0e0;
+    outline: none; /* Removes the default focus outline */
+}
+
+/* Placeholder text color */
+#todo-input::placeholder {
+    color: #888;
+}
+
+/* Add Task Button */
+#add-task-btn {
+    padding: 12px 20px;
+    background-color: #4CAF50; /* A vibrant green */
+    color: white;
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+#add-task-btn:hover {
+    background-color: #45a049;
+}
+
+/* To-Do List (Unordered List) */
+#todo-list {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+/* Each List Item (Task) */
+#todo-list li {
+    background-color: #2c2c2c;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    word-break: break-word; /* Prevents long words from overflowing */
+}
+
+#todo-list button{
+     padding: 12px 20px;
+    background-color: #4c93af; /* A vibrant green */
+    color: white;
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
